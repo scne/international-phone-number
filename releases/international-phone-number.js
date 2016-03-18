@@ -91,7 +91,7 @@
             if (!value) {
               return value;
             }
-            return value.replace(/[^\d]/g, '');
+            return element.intlTelInput('getNumber');
           });
           ctrl.$validators.internationalPhoneNumber = function(value) {
             var selectedCountry;
